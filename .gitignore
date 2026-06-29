@@ -1,0 +1,39 @@
+# ---- Secrets / environment ----
+.env
+*.env
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.Python
+
+# ---- Project data & generated artifacts ----
+# Large source dataset (60+ MB) — distribute separately, not via git
+data/*.csv
+# Generated Chroma vector store (hundreds of MB, rebuildable from main.py)
+chroma_db/
+
+# ---- Tooling caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Chainlit ----
+.chainlit/
+.files/
+
+# ---- OS / editor ----
+.DS_Store
+.idea/
+.vscode/
+*.swp
